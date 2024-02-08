@@ -1,6 +1,8 @@
 # travel-booking-form
 O projeto "Formulário de Reserva de Viagem" foi desenvolvido com o objetivo principal de proporcionar uma experiência prática de aprendizado sobre o uso de inputs, forms, fieldset e técnicas básicas de estilização CSS.
 
+![image](https://github.com/samuel-almeida-dev/travel-booking-form/assets/130515347/e8b891a6-e548-4812-8736-50768da9c889)
+
 Principais Recursos:
 - HTML5 Doctype: Declaração do tipo de documento HTML5 para definir a versão do HTML sendo utilizada.
 - Meta tags: Utilizadas para configurar o conjunto de caracteres (charset) e a viewport inicial para dispositivos móveis (viewport).
