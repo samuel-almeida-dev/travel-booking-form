@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Formulário de Reserva</title>
+</head>
+
+<style>
+    body {
+    background-color: azure;
+    font-family: 'Open Sans';
+}
+</style>
+
+<body>
+    <div>
+        <h3>Formulário para reserva de viagem</h3>
+        <form method="get" action="" style="display: flex; align-items: start; flex-direction: column;">
+            
+            <fieldset>
+                <legend>Dados do usuário:</legend>
+                <label>Nome:</label>
+                <input type="text" name="full_name" id="full_name">
+                
+                <label>Email:</label>
+                <input type="email" required name="email" id="email">
+                
+                <label>Senha:</label>
+                <input type="password" name="password" id="password">
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                <legend>Dados da viagem:</legend>
+                <label>Data de entrada:</label>
+                <input type="date" name="check_in_date" id="check_in_date">
+                
+                <label>Data de Saída:</label>
+                <input type="date" name="check_out_date" id="check_out_date">
+            
+                <label>Quantidade de pessoas:</label>
+                <input type="number" name="number_of_people" id="number_of_people">
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                <legend>Serviços Desejados</legend>
+                <label>
+                    <input type="checkbox" name="flight_booking" id="flight_booking">Compra de Passagens
+                </label>
+                <label>
+                    <input type="checkbox" name="accommodation_booking" value="accommodation_booking">Reserva de Hospedagem
+                </label>
+                <label>
+                    <input type="checkbox" name="car_booking" value="car_booking">Aluguel de Veículos    
+                </label>
+            </fieldset>
+            
+            <br>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento:</legend>
+                <label>
+                    <input type="radio" name="paymentMethod" value="credit_card">Cartão de Crédito
+                </label>
+                <label>
+                    <input type="radio" name="paymentMethod" value="debit_card">Cartão de Débito
+                </label>
+                <label>
+                    <input type="radio" name="paymentMethod" value="pix">Pix
+                </label>
+                <label>
+                    <input type="radio" name="paymentMethod" value="ticket">Boleto
+                </label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Escolha o prazo de pagamento:</legend>
+                <select name="paymentTerm" id="paymentTerm" style="font-size: medium;">
+                    <option value="cash">À vista</option>
+                    <option value="5x">5 vezes sem juros</option>
+                    <option value="10x">10 vezes com juros</option>
+                    <option value="12x">12 vezes com juros</option>
+                </select>
+            </fieldset>            
+
+            <br>
+            
+            <fieldset>
+                <legend>Comentários:</legend>
+                <textarea name="comments" id="comments" cols="50" rows="3"></textarea>
+            </fieldset>
+            
+            <br>
+
+            <fieldset style="display: flex; justify-content: center;">
+                <legend>Por favor, ao terminar, enviar formulário:</legend>
+                <button type="submit" style="padding: 5px 50px; font-family: 'Open Sans'; background-color: white; font-size: medium;">Salvar</button>
+            </fieldset>
+            
+        </form>
+    </div>
+</body>
+</html>
